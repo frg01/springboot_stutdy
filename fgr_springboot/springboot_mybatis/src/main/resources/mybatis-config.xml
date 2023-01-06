@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//batis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--配置mybatis自带日志输出，查看原生sql-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+
+    <typeAliases>
+        <package name="com.hspedu.springboot.mybatis.bean"/>
+    </typeAliases>
+
+
+
+    <!--plugins标签需要放在typeAliases标签后，是doctype约束的
+        配置分页拦截器
+    -->
+
+
+</configuration>

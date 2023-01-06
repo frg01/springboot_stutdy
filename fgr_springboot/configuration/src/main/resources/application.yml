@@ -1,0 +1,36 @@
+monster:
+  id: 100
+  name: 牛魔王
+  age: 500
+  isMarried: true
+  birth: 2000/11/11
+  car: #换行
+    name: 宝马
+    price: 30000
+#  car: {name: 宝马, price: 200000}  #行内格式
+  #数组
+  skill:
+    - 芭蕉扇~
+    - 牛魔拳~
+#  skill: [芭蕉扇, 牛魔拳]
+  #list
+#  hobby: [喝酒, 吃肉]
+  hobby:
+    - 喝酒~
+    - 吃肉~
+  #map
+#  wife: {no1: 狐狸, no2: 铁扇公主} #行内
+  wife:
+    no1: 狐狸
+    no2: 铁扇公主
+  #set
+  salaries: [10000, 20000] #行内
+  #map中包含list
+  cars:
+    group1:
+      - {name: 奔驰, price: 300000}
+      - name: 保时捷
+        price: 400000
+    group2:
+      - name: 特斯拉
+        price: 400000

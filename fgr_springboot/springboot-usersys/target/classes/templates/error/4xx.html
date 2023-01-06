@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="#CED3FE">
+<div align="center">
+    错误状态码：<h1 th:text="${status}">4xx Not Found</h1>
+    错误信息：<h1 th:text="${error}"></h1>
+    <a href="#" th:href="@{/}">返回主页面</a>
+</div>
+
+</body>
+</html>

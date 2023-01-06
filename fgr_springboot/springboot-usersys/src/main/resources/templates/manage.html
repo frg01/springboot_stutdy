@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>管理后台</title>
+</head>
+<body>
+<a href="">返回管理界面</a>    <a href="#" th:href="@{/}">安全退出</a>  欢迎你: [[${session.loginAdmin.name}]]
+<hr/>
+<div style="text-align: center">
+    <h1>管理雇员~</h1>
+    <table border="1px" cellspacing="0" bordercolor="green" style="width: 600px" align="center">
+        <tr bgcolor="#ffc0cb">
+            <td>id</td>
+            <td>name</td>
+            <td>pwd</td>
+            <td>age</td>
+            <td>email</td>
+            <td>email</td>
+        </tr>
+        <tr bgcolor="#ffc0cb" th:each="monster:${monsters}">
+            <td th:text="${monster.id}">a</td>
+            <td th:text="${monster.name}">b</td>
+            <td th:text="${monster.skill}">c</td>
+            <td th:text="${monster.age}">d</td>
+            <td th:text="${monster.sal}">e</td>
+            <td th:text="${monster.birth}">g</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+server:
+  port: 9090
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/springboot_mybatis?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: fgr
+mybatis:
+  # 配置mybatis的两种方式的选择，配置简单选择yml  配置内容多也可以用单独文件mybatis-config.xml
+  # 指定要扫描的XXxMapper.xml
+  mapper-locations: classpath:mapper/*.xml
+  #方式一通过config-location 可以以指定mybatis-config.xml  可以以传统方式来配置mybatis
+#  config-location: classpath:mybatis-config.xml
+  #  config-location:
+  #方式二 yml中
+  type-aliases-package: com.hspedu.springboot.mybatis.bean
+  #sql语句日志
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+

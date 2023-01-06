@@ -1,0 +1,39 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 50MB
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/spring_boot?useSSL=true&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: fgr
+    driver-class-name: com.mysql.jdbc.Driver
+#    druid:
+#      stat-view-servlet:
+#        enabled: true
+#        login-username: fgr
+#        login-password: 666
+#        reset-enable: false
+#      web-stat-filter: #配置web监控
+#        enabled: true
+#        url-pattern: /*
+#        exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ioc,/druid/*'
+#      filter:
+#        stat: #sql监控
+#          slow-sql-millis: 1000
+#          log-slow-sql: true
+#          enabled: true
+#        wall: #配置sql防火墙
+#          enabled: true
+#          config:
+#            drop-table-allow: false
+#            select-all-column-allow: false
+#server:
+#  port: 8080 #配置端口
+#  tomcat: #对tomcat进行配置
+#    threads:
+#      max: 10 # 最大工作线程  默认200
+#      min-spare: 5 #最小工作线程 默认10
+#    accept-count: 200 #tomcat 启动的线程达到最大值时，接收排队的请求个数 默认100
+#    max-connections: 2000 #最大连接数 最大并发数
+#    connection-timeout: 10000 #建立连接的超时时间(10s) 单位是毫秒

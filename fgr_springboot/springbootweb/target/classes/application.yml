@@ -1,0 +1,11 @@
+spring:
+  mvc:
+#    static-path-pattern: /fgrres/** #修改静态资源访问路径
+    hiddenmethod:
+        enabled: true  #启动了HiddenMethodFilter，支持rest风格
+    view:
+      suffix: .html
+      prefix: /   #前缀需要和static-path-pattern 保持一致
+  web:
+    resources:
+      static-locations: [classpath:/fgrimg/, "classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/"] #指定静态资源访问位置
